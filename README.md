@@ -2,7 +2,25 @@
 
 Un outil simple pour télécharger des polices Google Fonts au format WOFF2.
 
-## 🚀 Installation
+## 🌐 Deux versions disponibles
+
+### 🖥️ [Version Web](docs/) (Recommandé)
+Interface web moderne accessible dans votre navigateur. Aucune installation requise !
+- 🔍 Recherche et prévisualisation en temps réel
+- 🎯 Sélection interactive des variantes
+- 📥 Téléchargement direct dans le navigateur
+- 📱 Design responsive
+
+**[➡️ Essayer la version web](https://robindelporte.github.io/Font-downloader/)** (après déploiement sur GitHub Pages)
+
+### 💻 Version Python (CLI)
+Script en ligne de commande pour utilisateurs avancés et automatisation.
+
+---
+
+## 📘 Documentation - Version Python (CLI)
+
+### 🚀 Installation
 
 Ce script utilise uniquement la bibliothèque standard Python (Python 3.6+). Aucune dépendance externe requise !
 
@@ -15,15 +33,15 @@ cd Font-downloader
 chmod +x font_downloader.py
 ```
 
-## 📖 Utilisation
+### 📖 Utilisation
 
-### Syntaxe de base
+#### Syntaxe de base
 
 ```bash
 python font_downloader.py "NOM_DE_LA_POLICE" [-o DOSSIER_DE_SORTIE]
 ```
 
-### Exemples
+#### Exemples
 
 **1. Télécharger une police par son nom :**
 ```bash
@@ -50,7 +68,7 @@ python font_downloader.py "Open Sans" -o mes-polices
 python font_downloader.py "Playfair Display"
 ```
 
-## 📁 Structure des fichiers
+### 📁 Structure des fichiers
 
 Par défaut, les polices sont téléchargées dans le dossier `fonts/` :
 
@@ -64,7 +82,7 @@ Font-downloader/
 └── README.md
 ```
 
-## 🎯 Fonctionnalités
+### 🎯 Fonctionnalités
 
 - ✅ Télécharge automatiquement toutes les variantes disponibles (poids et styles)
 - ✅ Format WOFF2 optimisé pour le web
@@ -74,7 +92,7 @@ Font-downloader/
 - ✅ Interface en ligne de commande simple
 - ✅ Aucune dépendance externe
 
-## 🔧 Options
+### 🔧 Options
 
 ```
 positional arguments:
@@ -86,14 +104,14 @@ optional arguments:
                         Dossier de sortie pour les polices (défaut: fonts)
 ```
 
-## 💡 Notes
+### 💡 Notes
 
 - Le script télécharge automatiquement tous les poids disponibles (100-900) et styles (normal, italic)
 - Les fichiers sont nommés automatiquement selon leur source Google Fonts
 - Les fichiers existants ne sont pas re-téléchargés
 - Nécessite une connexion Internet pour accéder à Google Fonts
 
-## ⚠️ Dépannage
+### ⚠️ Dépannage
 
 **Erreur 403 Forbidden :**
 - Vérifiez votre connexion Internet
