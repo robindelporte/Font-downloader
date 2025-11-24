@@ -47,11 +47,11 @@ def build_google_fonts_url(font_family):
 def fetch_css(url):
     """Fetch the CSS file from Google Fonts with WOFF2 user agent."""
     # Use a modern browser user agent to get WOFF2 format
+    # Note: Don't specify Accept-Encoding to let urllib handle compression automatically
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/css,*/*;q=0.1',
         'Accept-Language': 'en-US,en;q=0.9',
-        'Accept-Encoding': 'gzip, deflate, br',
         'Referer': 'https://fonts.googleapis.com/',
         'Connection': 'keep-alive',
         'Sec-Fetch-Dest': 'style',
